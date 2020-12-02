@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat);
 body {
 	font-family: 'Montserrat', sans-serif;
-	margin: 5px;
-	padding: 5px;
+	margin: 0px;
+	padding: 0px;
 }
 /*шапка сайта*/
 header {
@@ -13,7 +13,6 @@ header {
 	height: 300px;
 	background: url(../images/moscow.jpg) center no-repeat;
 	background-size: cover;
-	border-radius: 10px;
 }
 
 header h1 {
@@ -32,7 +31,6 @@ footer {
 	height: 150px;
 	background: url(../images/moscow.jpg) bottom no-repeat;
 	background-size: cover;
-	border-radius: 10px;
 }
 
 footer img {
@@ -44,4 +42,67 @@ footer .copyright {
 	font-size: 1.1em;
 	color: white;
 	text-shadow: -1px -1px 0 #717F47, 1px -1px 0 #717F47, -1px 1px 0 #717F47, 1px 1px 0 #717F47;
+}
+
+/*статьи*/
+.news {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+article {
+	width: 90%;
+	margin: 5px; 
+	padding: 0px 20px 0px 20px;
+	background-color: #82A95A;
+	border-radius: 10px;
+	color: white;
+}
+article:nth-child(2n) {
+	width: 90%;
+	margin: 5px; 
+	padding: 0px 20px 0px 20px;
+	background-color: #608639;
+	border-radius: 10px;
+	color: white;
+}
+article h1 a {
+	text-decoration: none;
+	color: inherit;
+}
+article:nth-child(-n+2) h1 a::after {
+	content: "НОВАЯ";
+	color: red;
+	text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+	font-size: 0.5em;
+	vertical-align: top;
+}
+article .meta a {
+	content: "Источник";
+	text-decoration: underline;
+	color: inherit;
+}
+article .meta a:visited {
+	text-decoration: underline;
+	color: inherit;
+}
+article p {
+	background-color: #A2C77C;
+	padding: 10px;
+	font-size: 1.1em;
+	border-radius: 10px;
+}
+article p iframe {
+	border-radius: 10px;
+	height: 315px;
+	width: 560px;
+	display: block;
+	margin: 10px auto;
+}
+article p img {
+	max-width: 400px;
+	display: block;
+	margin: 0 auto;
 }
