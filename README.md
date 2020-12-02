@@ -4,10 +4,9 @@
 
 * HTML
 * CSS
-* Web-fonts ([Montserrat](https://fonts.googleapis.com/css2?family=Montserrat))
+* Web-fonts ([Montserrat](https://fonts.google.com/specimen/Montserrat))
 
-## Результаты проверки через [Validator W3C](https://validator.w3.org/
-)
+## Результаты проверки через [Validator W3C](https://validator.w3.org/)
 
 1. index.html:
 ![](./images/index.png)
